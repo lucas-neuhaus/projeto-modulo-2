@@ -34,7 +34,7 @@ public class CategoriaService {
         categoriaRepository.delete(categoria);
     }
 
-    private Boolean categoriaTemReceitas(Categoria categoria) {
+    private boolean categoriaTemReceitas(Categoria categoria) {
         return categoria.temReceitas();
     }
 
