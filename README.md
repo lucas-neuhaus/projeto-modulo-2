@@ -1,6 +1,12 @@
 # Projeto Módulo 2
 Este é um projeto de exemplo que consiste em um sistema para gerenciar categorias e receitas. O projeto foi desenvolvido utilizando a linguagem de programação Java e o framework Spring Boot.
 
+# Informações do Projeto
+* Linguagem de programação: Java (versão 17).
+* Framework: Spring Boot (versão 3.0.7).
+* Banco de Dados: PostgreSQL.
+* Gerenciador de Dependências: Maven.
+
 # Funcionalidades
 O projeto possui as seguintes funcionalidades:
 
