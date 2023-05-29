@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "fa12b5ac-a403-49d8-b225-bc1bd3e7758c",
+		"name": "projetomodulo2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27397297"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/receita",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"categoria\": {\r\n    \"id\": 1\r\n  },\r\n  \"nome\": \"Strogonoff de Frango\",\r\n  \"ingredientes\": \"500g de peito de frango\\n1 cebola média\\n2 dentes de alho\\n1 colher de sopa de manteiga\\n1 colher de sopa de óleo\\n200g de champignon fatiado\\n1 lata de creme de leite\\n3 colheres de sopa de ketchup\\n2 colheres de sopa de mostarda\\nSal e pimenta a gosto\",\r\n  \"preparo\": \"Frango em cubos, refogue com cebola e alho. Adicione champignon, ketchup, mostarda, sal e pimenta. Misture creme de leite. Cozinhe e sirva com arroz e batata palha.\",\r\n  \"restricoes\": false\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receita",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receita"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/categoria/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/categoria/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/categoria",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/categoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Intolerância à Lactose\",\r\n  \"descricao\": \"Pessoas com intolerância à lactose têm dificuldade em digerir a lactose, o açúcar presente no leite e em produtos lácteos. Essas pessoas precisam evitar ou limitar a ingestão de produtos lácteos ou optar por alternativas sem lactose.\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/categoria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/receitas/sem-restricoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/receita/sem-restricoes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receita",
+						"sem-restricoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/receita/por-categoria/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/receita/por-categoria/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receita",
+						"por-categoria",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/receita/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/receita/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receita",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/receita/atualizar/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"categoria\":{\r\n    \"id\": 1\r\n  },\r\n \"nome\": \"Bolo de Chocolate sem Lactose\",\r\n  \"ingredientes\": \"Farinha de trigo, cacau em pó, fermento em pó, leite de amêndoas, açúcar, óleo vegetal, ovos, extrato de baunilha\",\r\n  \"preparo\": \"Misture ingredientes secos. Adicione líquidos e misture. Asse por 30 min. Deixe esfriar e sirva.\",\r\n  \"restricoes\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/receita/atualizar/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receita",
+						"atualizar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/receita/com-restricoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/receita/com-restricoes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"receita",
+						"com-restricoes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

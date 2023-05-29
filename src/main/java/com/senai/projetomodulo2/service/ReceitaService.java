@@ -4,12 +4,11 @@ package com.senai.projetomodulo2.service;
 import com.senai.projetomodulo2.model.Categoria;
 import com.senai.projetomodulo2.model.Receita;
 import com.senai.projetomodulo2.repository.ReceitaRepository;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-@Slf4j
+
 @Service
 public class ReceitaService {
 

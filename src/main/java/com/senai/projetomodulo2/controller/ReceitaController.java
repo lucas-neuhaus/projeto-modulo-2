@@ -23,7 +23,7 @@ public class ReceitaController {
         return new ResponseEntity<Receita>(novaReceita, HttpStatus.CREATED);
     }
 
-    @JsonIgnore
+
     @PutMapping(value = "atualizar/{id}")
     public ResponseEntity<Receita> atualizarReceita(@PathVariable Long id, @RequestBody Receita receita) {
         Receita receitaAtualizada = receitaService.atualizarReceita(id, receita);
@@ -37,7 +37,7 @@ public class ReceitaController {
         return new ResponseEntity<>(mensagem, HttpStatus.OK);
     }
 
-    @JsonIgnore
+
     @GetMapping(value = "/por-categoria/{categoriaId}")
     public ResponseEntity<List<Receita>> listarReceitasPorCategoria(@PathVariable Long categoriaId) {
         List<Receita> receitas = receitaService.listarReceitasPorCategoria(categoriaId);

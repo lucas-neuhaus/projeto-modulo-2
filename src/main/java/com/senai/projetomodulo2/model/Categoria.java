@@ -23,7 +23,7 @@ public class Categoria {
 
     @Column(length = 40, unique = true, nullable = false)
     private String nome;
-    @Column(length = 120)
+    @Column(length = 240)
     private String descricao;
 
     @JsonIgnore
