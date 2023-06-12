@@ -35,8 +35,6 @@ Além disso, o projeto utiliza as anotações do framework Spring Boot, como @Re
 
 O projeto utiliza um banco de dados relacional para armazenar as categorias e receitas. A configuração do banco de dados é realizada no arquivo application.properties ou application.yml, onde é possível definir o tipo de banco de dados, URL de conexão, usuário, senha, entre outras propriedades.
 
-Por padrão, o projeto está configurado para utilizar o banco de dados H2, um banco de dados em memória que não requer instalação. Caso queira utilizar um banco de dados diferente, é necessário ajustar as configurações de acordo com o banco de dados desejado.
-
 # Executando o projeto
 
 1. Clone o repositório: Abra o terminal ou prompt de comando e navegue até o diretório em que você deseja clonar o projeto. Em seguida, execute o comando git clone <URL_DO_REPOSITÓRIO>, substituindo <URL_DO_REPOSITÓRIO> pela URL do repositório Git que contém o código do projeto Spring Boot.
